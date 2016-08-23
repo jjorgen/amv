@@ -1,6 +1,9 @@
-package org.nsu.dcis;
+package org.nsu.dcis.amv.controller;
 
-public class Amv
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class AmvClient
 {
     public static void main( String[] args )
     {
