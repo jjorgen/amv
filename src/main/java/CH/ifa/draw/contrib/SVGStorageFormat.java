@@ -85,7 +85,7 @@ public class SVGStorageFormat extends StandardStorageFormat {
 		Writer out = new OutputStreamWriter(fos, "UTF-8");
 		
 		
-		svgGenerator.stream(out, true);
+//		svgGenerator.stream(out, true);
 		return fileName;
   }
 
