@@ -26,10 +26,11 @@
         </property>
     </bean>
 
-    <bean id="webServiceConfiguration" class="org.nsu.dcis.amv.util.AmvClientConfiguration">
+    <bean id="amvClientConfiguration" class="org.nsu.dcis.amv.util.AmvClientConfiguration">
         <property name="executionTracesMining" value="${amvclient.execution.traces.mining}"/>
         <property name="cloneDetectionMining" value="${amvclient.clone.detection.mining}"/>
         <property name="clusteringMining" value="${amvclient.clustering.mining}"/>
+        <property name="jhotdrawSourceRoot" value="${jhotdraw.source.root}"/>
     </bean>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">

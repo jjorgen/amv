@@ -4,6 +4,7 @@ public class AmvClientConfiguration {
     private String executionTracesMining;
     private String cloneDetectionMining;
     private String clusteringMining;
+    private String jhotdrawSourceRoot;
 
     public void setExecutionTracesMining(String executionTracesMining) {
         this.executionTracesMining = executionTracesMining;
@@ -29,12 +30,21 @@ public class AmvClientConfiguration {
         return clusteringMining;
     }
 
+    public void setJhotdrawSourceRoot(String jhotdrawSourceRoot) {
+        this.jhotdrawSourceRoot = jhotdrawSourceRoot;
+    }
+
+    public String getJhotdrawSourceRoot() {
+        return jhotdrawSourceRoot;
+    }
+
     @Override
     public String toString() {
         return "AmvClientConfiguration{" +
                 "executionTracesMining='" + executionTracesMining + '\'' +
                 ", cloneDetectionMining='" + cloneDetectionMining + '\'' +
                 ", clusteringMining='" + clusteringMining + '\'' +
+                ", jhotdrawSourceRoot='" + jhotdrawSourceRoot + '\'' +
                 '}';
     }
 }
