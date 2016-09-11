@@ -13,7 +13,6 @@ public class CloningService {
     CloneScanner cloneScanner;
 
     public CloneResult findClones() {
-
         return new CloneResult();
     }
 }
