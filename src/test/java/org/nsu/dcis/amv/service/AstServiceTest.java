@@ -1,4 +1,4 @@
-package org.nsu.dcis.amv.util;
+package org.nsu.dcis.amv.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -6,20 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static org.junit.Assert.*;
-
 @ContextConfiguration(locations = "classpath:applicationContext.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
-public class CloneScannerTest {
+public class AstServiceTest {
 
     @Autowired
-    CloneScanner cloneScanner;
+    AstService astService;
 
     @Test
-    public void successfullyScanForClonesTest() throws Exception {
-        String rootDirectory = null;
-
-        CloneResult cloneResult = cloneScanner.scan(rootDirectory);
-        assertNotNull(cloneResult);
+    public void getAstList() throws Exception {
+        astService.getAstList();
     }
+
 }

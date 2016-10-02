@@ -1,10 +1,13 @@
 package org.nsu.dcis.amv.util;
 
+import org.springframework.stereotype.Component;
+
 public class AmvClientConfiguration {
     private String executionTracesMining;
     private String cloneDetectionMining;
     private String clusteringMining;
     private String jhotdrawSourceRoot;
+    private String jhotdrawExcludedDirectoryList;
 
     public void setExecutionTracesMining(String executionTracesMining) {
         this.executionTracesMining = executionTracesMining;
@@ -38,6 +41,14 @@ public class AmvClientConfiguration {
         return jhotdrawSourceRoot;
     }
 
+    public void setJhotdrawExcludedDirectoryList(String jhotdrawExcludedDirectoryList) {
+        this.jhotdrawExcludedDirectoryList = jhotdrawExcludedDirectoryList;
+    }
+
+    public String getJhotdrawExcludedDirectoryList() {
+        return jhotdrawExcludedDirectoryList;
+    }
+
     @Override
     public String toString() {
         return "AmvClientConfiguration{" +
@@ -45,6 +56,7 @@ public class AmvClientConfiguration {
                 ", cloneDetectionMining='" + cloneDetectionMining + '\'' +
                 ", clusteringMining='" + clusteringMining + '\'' +
                 ", jhotdrawSourceRoot='" + jhotdrawSourceRoot + '\'' +
+                ", jhotdrawExcludedDirectoryList='" + jhotdrawExcludedDirectoryList + '\'' +
                 '}';
     }
 }
