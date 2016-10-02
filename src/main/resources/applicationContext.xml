@@ -31,6 +31,7 @@
         <property name="cloneDetectionMining" value="${amvclient.clone.detection.mining}"/>
         <property name="clusteringMining" value="${amvclient.clustering.mining}"/>
         <property name="jhotdrawSourceRoot" value="${jhotdraw.source.root}"/>
+        <property name="jhotdrawExcludedDirectoryList" value="${jhotdraw.excluded.directory.list}"/>
     </bean>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
