@@ -3,6 +3,7 @@ package org.nsu.dcis.amv.service;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.nsu.dcis.amv.service.clone.CloneDetectionService;
 import org.nsu.dcis.amv.util.PdgWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;

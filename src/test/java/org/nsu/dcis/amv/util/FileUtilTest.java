@@ -1,22 +1,29 @@
-package org.nsu.dcis.amv.service;
+package org.nsu.dcis.amv.util;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.nsu.dcis.amv.service.clone.AstService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
+
+import static org.junit.Assert.*;
 
 @ContextConfiguration(locations = "classpath:applicationContext.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
-public class AstServiceTest {
+@Transactional
+public class FileUtilTest {
 
     @Autowired
-    AstService astService;
+    FileUtil fileUtil;
 
     @Test
-    public void getAstList() throws Exception {
-        astService.getAstList();
+    public void getFileExtension() throws Exception {
+    }
+
+    @Test
+    public void getFileLineList() throws Exception {
+
     }
 
 }

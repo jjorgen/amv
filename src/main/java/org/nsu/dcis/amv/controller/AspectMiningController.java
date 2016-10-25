@@ -3,7 +3,7 @@ package org.nsu.dcis.amv.controller;
 import org.nsu.dcis.amv.domain.AspectMiningResults;
 import org.nsu.dcis.amv.domain.ClusteringResults;
 import org.nsu.dcis.amv.domain.EventTracesResults;
-import org.nsu.dcis.amv.service.CloneDetectionService;
+import org.nsu.dcis.amv.service.clone.CloneDetectionService;
 import org.nsu.dcis.amv.service.ClusteringService;
 import org.nsu.dcis.amv.service.EventTracesService;
 import org.nsu.dcis.amv.domain.CloneDetectionResults;
