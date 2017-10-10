@@ -39,4 +39,20 @@ public class AspectMiningController {
 
     private void save(AspectMiningResults aspectMiningResults) {
     }
+
+    public void start(String[] args) {
+        switch (args[1]) {
+            case "CloneDetection" :
+                CloneDetectionResults cloneDetectionResults = cloneDetectionService.mine();
+                break;
+            case "EventTracing" :
+                EventTracesResults eventTracesResults = eventTracesService.mine();
+                break;
+            case "Clustering" :
+                ClusteringResults clusteringResults = clusteringService.mine();
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid value for mining method: " + args[1]);
+        }
+    }
 }

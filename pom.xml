@@ -111,6 +111,13 @@
             <version>3.0.0-alpha.6</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.javaparser</groupId>
+            <artifactId>javaparser-core</artifactId>
+            <version>3.0.0-alpha.6</version>
+            <classifier>sources</classifier>
+        </dependency>
+
         <!-- Test dependencies -->
         <dependency>
             <groupId>junit</groupId>
@@ -125,7 +132,6 @@
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
-
 
     </dependencies>
 

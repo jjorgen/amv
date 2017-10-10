@@ -2,7 +2,7 @@ package org.nsu.dcis.amv.service.clone;
 
 import org.nsu.dcis.amv.component.clone.AstBuilder;
 import org.nsu.dcis.amv.component.clone.AstContext;
-import org.nsu.dcis.amv.domain.Ast;
+import org.nsu.dcis.amv.domain.clone.Ast;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
